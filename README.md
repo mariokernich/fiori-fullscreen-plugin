@@ -1,6 +1,6 @@
 # Fiori Fullscreen Plugin
 
-This project is a simple Fiori extension that adds a button to toggle fullscreen mode in a Fiori application. It leverages the new Extension API provided by UI5 to seamlessly integrate this functionality.
+This project is a simple Fiori extension that adds a button to toggle fullscreen mode. It leverages the new Extension API provided by UI5 to seamlessly integrate this functionality.
 
 ![Build](https://github.com/mariokernich/fiori-fullscreen-plugin/actions/workflows/nodejs.yml/badge.svg)
 ![Eslint](https://github.com/mariokernich/fiori-fullscreen-plugin/actions/workflows/eslint.yml/badge.svg)
