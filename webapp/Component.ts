@@ -24,17 +24,19 @@ export default class Component extends UIComponent {
     }
 
     private async handleInit() {
-        // load translations
+        // load translations from messagebundle
         const resourceModel = new ResourceModel({
             bundleName: "de.kernich.fiori.fullscreen.messagebundle",
             async: true,
         });
         const resourceBundle = await resourceModel.getResourceBundle();
 
-        // register button
-        const extension = (await Container.getServiceAsync(
+        // fetch Extension service
+        const extension = await Container.getServiceAsync<Extension>(
             "Extension"
-        )) as unknown as Extension;
+        );
+
+        // register button
         const item = await extension.createHeaderItem({
             icon: document.fullscreenElement
                 ? "sap-icon://exit-full-screen"
