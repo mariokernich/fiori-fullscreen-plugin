@@ -26,7 +26,10 @@ This project is a simple Fiori extension that adds a button to toggle fullscreen
    ```bash
    npm install
    ```
-4. Deploy the extension to your Fiori environment or include it in your project as needed.
+4. Start the project:
+   ```bash
+   npm run start
+   ```
 
 ## Usage
 
@@ -36,7 +39,7 @@ This project is a simple Fiori extension that adds a button to toggle fullscreen
 
 ## Requirements
 
-- SAP UI5 version supporting the new Extension API.
+- SAP UI5 version greater than 1.120.0 which supporting the new Extension API: https://sapui5.hana.ondemand.com/sdk/#/api/sap.ushell.services.Extension
 - A Fiori application where the plugin can be integrated.
 
 ## Customization
