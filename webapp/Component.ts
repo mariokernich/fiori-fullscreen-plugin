@@ -24,13 +24,14 @@ export default class Component extends UIComponent {
     }
 
     private async handleInit() {
+        // load translations
         const resourceModel = new ResourceModel({
             bundleName: "de.kernich.fiori.fullscreen.messagebundle",
             async: true,
         });
         const resourceBundle = await resourceModel.getResourceBundle();
-        resourceBundle.getText("btnText");
 
+        // register button
         const extension = (await Container.getServiceAsync(
             "Extension"
         )) as unknown as Extension;
@@ -57,6 +58,8 @@ export default class Component extends UIComponent {
                 }
             },
         });
+
+        // show button in all apps
         item.showForAllApps();
     }
 }
