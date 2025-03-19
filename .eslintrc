@@ -1,0 +1,11 @@
+{
+    "extends": "plugin:@sap-ux/eslint-plugin-fiori-tools/defaultTS",
+    "root": true,
+    "rules": {
+        "linebreak-style": "off",
+        "valid-jsdoc": "off",
+        "fiori-custom/sap-no-proprietary-browser-api": "off",
+        "fiori-custom/sap-browser-api-warning": "off",
+        "no-use-before-define": "off"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "name": "fiori-fullscreen",
+    "version": "0.0.1",
+    "private": true,
+    "description": "An SAP Fiori application.",
+    "keywords": [
+        "ui5",
+        "openui5",
+        "sapui5"
+    ],
+    "main": "webapp/index.html",
+    "devDependencies": {
+        "@babel/cli": "^7.24.7",
+        "@babel/core": "^7.24.7",
+        "@babel/eslint-parser": "7.14.7",
+        "@babel/preset-env": "^7.24.7",
+        "@babel/preset-typescript": "^7.24.7",
+        "@sap-ux/eslint-plugin-fiori-tools": "^0.4.0",
+        "@sap/ui5-builder-webide-extension": "^1.1.9",
+        "@sap/ux-ui5-tooling": "1",
+        "@sapui5/types": "~1.133.0",
+        "@typescript-eslint/eslint-plugin": "^7.1.1",
+        "@typescript-eslint/parser": "^7.1.1",
+        "@ui5/cli": "latest",
+        "@ui5/ts-interface-generator": "^0.9.0",
+        "babel-preset-transform-ui5": "^7.4.2",
+        "eslint": "8.57.0",
+        "eslint-plugin-fiori-custom": "2.6.7",
+        "mbt": "^1.2.27",
+        "typescript": "^5.5.4",
+        "ui5-task-zipper": "^3.1.3",
+        "ui5-tooling-transpile": "^3.3.7"
+    },
+    "scripts": {
+        "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#fiorifullscreen-display\"",
+        "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
+        "lint": "eslint webapp",
+        "lint-fix": "eslint webapp --fix",
+        "ts-typecheck": "tsc --noEmit",
+        "unit-tests": "fiori run --open 'test/unit/unitTests.qunit.html'",
+        "int-tests": "fiori run --open 'test/integration/opaTests.qunit.html'"
+    },
+    "sapuxLayer": "CUSTOMER_BASE",
+    "ui5": {
+        "dependencies": [
+            "@sap/ui5-builder-webide-extension",
+            "ui5-task-zipper",
+            "mbt"
+        ]
+    },
+    "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+}

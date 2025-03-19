@@ -1,0 +1,54 @@
+{
+    "_version": "1.17.0",
+    "sap.app": {
+        "id": "de.kernich.fiori.fullscreen",
+        "type": "component",
+        "i18n": "messagebundle.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "dataSources": {}
+    },
+    "sap.flp": {
+        "type": "plugin"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": false,
+        "dependencies": {
+            "minUI5Version": "1.133.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ushell": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {},
+        "resources": {}
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "fiorifullscreen"
+    }
+}
