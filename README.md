@@ -6,11 +6,15 @@ This project is a simple Fiori extension that adds a button to toggle fullscreen
 ![Eslint](https://github.com/mariokernich/fiori-fullscreen-plugin/actions/workflows/eslint.yml/badge.svg)
 ![TypeScript](https://github.com/mariokernich/fiori-fullscreen-plugin/actions/workflows/tsc.yml/badge.svg)
 
+![Screenshot](screenshot.png)
+
+
 ## Features
 
 - Adds a button to the Fiori application toolbar.
 - Allows users to enter and exit fullscreen mode with a single click.
 - Built using the latest UI5 Extension API for easy integration and maintainability.
+
 
 ## Setup
 
