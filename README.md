@@ -12,21 +12,13 @@ This project is a simple Fiori extension that adds a button to toggle fullscreen
 - Allows users to enter and exit fullscreen mode with a single click.
 - Built using the latest UI5 Extension API for easy integration and maintainability.
 
-## Installation
+## Setup
 
-1. Clone this repository to your local machine:
-   ```bash
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd fiori-fullscreen-plugin
-   ```
-3. Install the required dependencies:
+1. Install the required dependencies:
    ```bash
    npm install
    ```
-4. Start the project:
+2. Start the project:
    ```bash
    npm run start
    ```
